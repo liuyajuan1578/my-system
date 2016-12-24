@@ -3,9 +3,11 @@
  */
 angular.module('app.view',[
     'app.view.main',
-    'app.view.map'
+    'app.view.home',
+    'app.view.map',
     ])
-    .config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
-        //$urlRouterProvider.otherwise('');
+    .config(['$stateProvider','$urlRouterProvider','$locationProvider',function($stateProvider,$urlRouterProvider,$locationProvider){
+        $locationProvider.hashPrefix('');
+        $urlRouterProvider.otherwise('/home');
     }]);
 

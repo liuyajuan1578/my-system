@@ -5,14 +5,14 @@ angular.module('app.view.map',[
     'ui.router',
     'ui.bootstrap'
 ])
-    .config(['$stateProvider'],function($stateProvider){
+    .config(['$stateProvider',function($stateProvider){
         $stateProvider
-            .state('main.group',{
-                url:'group',
-                templateUrl:'view/map/map.html',
+            .state('main.map',{
+                url:'/map',
+                templateUrl:'views/map/map.html',
                 controller:"MapCtrl"
             })
-    })
+    }])
     .controller('MapCtrl',function($scope){
 
     });

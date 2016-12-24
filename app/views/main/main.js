@@ -3,7 +3,7 @@
  */
 'use strict';
 angular.module('app.view.main',['ui.router'])
-    .config(['$stateProvider'],function($stateProvider){
+    .config(['$stateProvider',function($stateProvider){
        $stateProvider
            .state('main',{
                abstract:true,
@@ -13,4 +13,4 @@ angular.module('app.view.main',['ui.router'])
 
                }
            })
-    });
+    }]);
