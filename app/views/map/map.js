@@ -13,6 +13,11 @@ angular.module('app.view.map',[
                 controller:"MapCtrl"
             })
     }])
-    .controller('MapCtrl',function($scope){
+    .controller('MapCtrl',function($scope,$timeout){
+        $scope.initMap=function(){
+            var map=new BMap.Map('map-container');
+            var point=new BMap.Point(116.404,39.915);
+            map.centerAndZoom(point);
+        };
 
     });

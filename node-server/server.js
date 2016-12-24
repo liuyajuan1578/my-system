@@ -12,6 +12,11 @@ app.get(/bower_components/,function(req,res){
     let staticPath=path.resolve(__dirname,'../app'+req.originalUrl);
     res.sendFile(staticPath);
 });
+app.get(/node_modules/,function(req,res){
+    let staticPath=path.resolve(__dirname,'..'+req.originalUrl);
+    res.sendFile(staticPath);
+});
+app.get
 app.use(express.static(path.join(__dirname,'../dev')));
 
 app.listen(8001);

@@ -5,5 +5,6 @@
 angular.module('app',[
     'ui.router',
     'ui.bootstrap',
-    'app.view'
+    'app.view',
+    'app.directive'
 ]);
