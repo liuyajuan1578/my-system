@@ -25,5 +25,50 @@
     "angular-websocket": "^2.0.0",
     "ng-dialog": "^0.6.4",
     "ng-tags-input": "^3.1.1"
+  },
+  "overrides":{
+    "jquery":{
+      "main":[
+        "dist/jquery.min.js"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    "angular": {
+      "main": [
+        "angular.min.js"
+      ]
+    },
+    "angular-messages": {
+      "main": [
+        "angular-messages.min.js"
+      ]
+    },
+    "angular-ui-router": {
+      "main": [
+        "release/angular-ui-router.min.js"
+      ]
+    },
+    "angular-bootstrap": {
+      "main": [
+        "ui-bootstrap-tpls.min.js"
+      ]
+    },
+    "angular-websocket": {
+      "main": [
+        "angular-websocket.min.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css",
+        "less/font-awesome.min.less",
+        "scss/font-awesome.min.scss"
+      ]
+    }
   }
 }
